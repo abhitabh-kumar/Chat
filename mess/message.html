@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" type="text/css" href="message.css">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script> 
+</head>
+
+<body>
+    <div class="full">
+        <div class="contact_list">
+            <div class="heading1">
+                <p>Profile</p>
+            </div>
+            <div class="DP"><img src="user_img.jpg" alt=""></div>
+            <div class="name_chat">
+                <p>Your Name</p>
+                <div class="dibaa" id="userName">Abhitabh kumar pandey</div>
+            </div>
+            <div class="name_des">
+                <p>This is the name of patient. This name will be visible to Doctors.</p>
+            </div>
+            <div class="rog">
+                <p>Email id</p>
+                <div class="dibaa" id="useremail">abhitabhkp.ic.in@gmail.com</div>
+            </div>
+
+        </div>
+        <div class="heading2">
+            <div class="hori">
+                <div class="doc_img"><img src="user2.png" alt=""></div>
+            </div>
+            <div class="dots">
+                <div class="minus">
+                    <div> </div>
+                </div>
+                <div class="box">
+                    <div class="box2"></div>
+                </div>
+
+                <div class="cross">
+                    <p>&times;</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chating">
+                <!-- <div class="message right"></div>
+               <div class="message left"></div> -->
+            </div>
+            <div class="documentdibba">
+                 <div class="closeoff">
+                    <span class="off" onclick="basBhai()"> &times;</span>
+                    <div class="headname"></div>
+                 </div>
+                 <div class="mainContent">
+                     <div class="documentContent"></div>
+                 </div>
+            </div>
+            <div class="heading3">
+                <div class="attach" >
+                    <label for="khulja"><img src="attaching.png"></label>
+                    <input id="khulja" type="file">
+                </div>
+                <form action="#" id="send-container">
+                   <input type="text" placeholder="Type a message" id="mess" onblur="sendit()">
+                   <button class="micro1" onclick="sendit()" type="submit"><img src="sendphoto.png"></button>
+                   <div class="micro"><img src="voice_message.jpg"></div>
+                </form>
+            </div>
+            <!-- <div class="last">
+                <form action="#" id="sending">
+                   <div class="howMany">
+                        <div class="boxed first"></div>
+                        <div class="boxed second"><span>&#43;</span></div>
+                   </div>
+                   <input id="khulja" type="file">
+                   <button class="send_me" onclick="sendit()" type="submit">&#10148;</button>
+                </form>
+            </div> -->
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
+<script src="js/message.js"></script>
+</html>
